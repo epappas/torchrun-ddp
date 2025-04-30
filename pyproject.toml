@@ -15,6 +15,7 @@ dependencies = [
   "uvloop>=0.21.0",
   "torchft>=0.1.1",
   "huggingface-hub>=0.30.2",
+  "sentencepiece>=0.2.0",
 ]
 
 [project.scripts]
