@@ -14,7 +14,9 @@ def dct_compression_hook():
         A communication hook function for DDP
     """
 
-    def dct_compress_hook(state: object, bucket: dist.GradBucket) -> torch.futures.Future:
+    def dct_compress_hook(
+        state: object, bucket: dist.GradBucket
+    ) -> torch.futures.Future[torch.Tensor]:
         tensor = bucket.buffer()
 
         compressed_tensor = torch.fft.dct(tensor, norm="ortho")[: tensor.size(0) // 2]

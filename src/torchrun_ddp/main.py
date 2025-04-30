@@ -61,7 +61,6 @@ async def run(
     dataloader = DataLoader(
         dataset,  # type: ignore
         batch_size=batch_size,
-        shuffle=True,
         collate_fn=collate_fn,
     )
 
