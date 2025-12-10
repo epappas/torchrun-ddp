@@ -23,7 +23,7 @@ PyTorch Distributed Data Parallel (DDP) training framework for fine-tuning LLaMA
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/torchrun-ddp.git
+git clone https://github.com/epappas/torchrun-ddp.git
 cd torchrun-ddp
 
 # Install dependencies with uv
